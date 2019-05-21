@@ -49,3 +49,53 @@ body {
 .row{
   padding: 1.5em 0;
 }
+
+/* inician estilos de categorias */
+.wrapper {
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "uno dos  " "uno tres";
+    width: 100vw;
+    max-width: 100%;
+    /* overflow: hidden; */
+    height: 730px;
+    }
+.box {
+    background-color: #efefef;
+    color: #fff;
+    padding: 20px;
+    font-size: 150%;
+    }
+.box > img{
+  width: 100%;
+}
+.uno{
+    grid-area: uno;
+    }
+.dos{
+    grid-area: dos;
+    }
+.tres{
+    grid-area: tres;
+  }
+
+    /* Sección footer */
+    footer{
+      color: #aaa;
+      background-color: #efefef;
+      text-align: center;
+      padding: 5px 0;
+    }
+    footer ul{
+      padding-left: 0;
+    }
+    footer li{
+      list-style-type: none;
+    }
+    footer a{
+      color: #aaa;
+      list-style-type: none;
+      text-decoration: none;
+    }
